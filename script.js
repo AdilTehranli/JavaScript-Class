@@ -1,4 +1,3 @@
-
 class Company{
     constructor(companyName,locationName){
         this.companyName=companyName,
@@ -41,12 +40,18 @@ class Company{
         employeeArr[1].push(position);
         employeeArr[2].push(salary);
         console.log(employeeArr);
+        this.table();
     }
 }
-
+let loc=document.getElementById('loc');
 function Add(){
   
-    ca.addData();
+    if(loc.value=='1'){
+        ca.addData();
+
+    }else{
+        lo.addData()
+    }
 }
 
 const ca=new Company('Code Academy','28 may')
@@ -54,4 +59,3 @@ const lo=new Company('Code Academy','Nizami')
 
 document.getElementById('company').innerHTML=ca.companyName;
 document.getElementById('location').innerHTML=lo.locationName;
-
